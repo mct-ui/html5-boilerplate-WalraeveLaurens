@@ -5,13 +5,12 @@
 */
 
 html {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Helvetica Neue",  Helvetica, Arial, sans-serif;
-    color: #111;
-    padding: 24px 24px 0;
-
-
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  padding: 24px 24px 0;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -22,16 +21,15 @@ html {
  */
 
 ::-moz-selection {
-    background: #44c8f5;
-    color: white;
-    text-shadow: none;
-
+  background: #44c8f5;
+  color: white;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #44c8f5;
-    color: white;
-    text-shadow: none;
+  background: #44c8f5;
+  color: white;
+  text-shadow: none;
 }
 
 /*
@@ -41,8 +39,8 @@ html {
 */
 
 img {
-    max-width: 100%;
-    vertical-align: top;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 /*
@@ -52,91 +50,139 @@ img {
 */
 
 h1 {
-    font-family: "Times New Roman", serif;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 40px;
-    margin: 0 0 48px;
+  font-family: 'Times New Roman', serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48px;
 }
 
 h2 {
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 h3 {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 h4,
 h5,
 h6 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 p,
 ol,
 ul,
 dl,
-table,
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+th {
+    text-align: left;
+}
+
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
 address,
 figure {
-    margin: 0 0 24px;
+  margin: 0 0 24px;
 }
-figcaption{
-    font-size: 12px;
-    line-height: 16px;
-    padding-top: 8px;
-    color: grey;
+figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: grey;
 }
 
 ul,
-ol{
-    padding-left: 24px;
+ol {
+  padding-left: 24px;
 }
 blockquote {
-    font-style: italic;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-    font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: 'Times New Roman', serif;
 }
 
 li ul,
-li ol{
-    margin-bottom: 0;
+li ol {
+  margin-bottom: 0;
 }
 
-blockquote {
-    font-size: inherit;
-    line-height: inherit;
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
 }
-
-
 
 hr {
-    border: 0;
-    height: 1px;
-    background: lightgrey;
-    margin: 0 0 24px;
+  border: 0;
+  height: 1px;
+  background: lightgrey;
+  margin: 0 0 24px;
 }
 
 a {
-    color: royalblue;
-    transition: all .1s ease-in-out;
+  color: royalblue;
+  transition: all 0.1s ease-in-out;
 }
 
 a:hover,
 a:focus {
-    color: crimson;
+  color: crimson;
 }
 
 a:visited,
 a:active {
-    color: blueviolet;
+  color: blueviolet;
+}
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+*/
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
+  html {
+    padding: 48px 48px 24 px;
+  }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+.odd {
+    background-color: whitesmoke;
 }
